@@ -1,0 +1,129 @@
+<html>
+<head>
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery-1.11.2/jquery-1.11.2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+</head>
+<body>
+
+
+<div align="center">
+    <h2>REGISTER DAT MOFO'</h2>
+    <br/>
+
+    <div style="width:800px">
+    <form id="br-form" class="form-horizontal">
+        <div class="form-group">
+        	<div class="col-xs-4">
+        	   {{ form.lloji_biznesit.label(class="control-label") }}
+        	</div>
+        	<div class="col-xs-8">
+        	   {{ form.lloji_biznesit(class="form-control") }}
+        	</div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form.numri_regjistrimit.label(class="control-label") }}
+            </div>
+            <div class="col-xs-8">
+            {{ form.numri_regjistrimit(class="form-control") }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form.numri_fiskal.label(class="control-label") }}
+            </div>
+            <div class="col-xs-8">
+                {{ form.numri_fiskal(class="form-control") }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form.kta_certificate_number.label(class="control-label") }}
+            </div>
+            <div class="col-xs-8">
+                {{ form.kta_certificate_number(class="form-control") }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form.pronare.label(class="control-label") }}
+            </div>
+            <div class="col-xs-8">
+                {{ form.pronare(class="form-control") }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form.aktivitetet.label(class="control-label") }}
+            </div>
+            <div class="col-xs-8">
+                {{ form.aktivitetet(class="form-control", style="height:200px;") }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form.numri_puntoreve.label(class="control-label") }}
+            </div>
+            <div class="col-xs-8">
+                {{ form.numri_puntoreve(class="form-control") }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form.data_konstituimit.label(class="control-label") }}
+            </div>
+            <div class="col-xs-8">
+                {{ form.data_konstituimit(class="form-control") }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form.data_aplikimit.label(class="control-label") }}
+            </div>
+            <div class="col-xs-8">
+                {{ form.data_aplikimit(class="form-control") }}
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form.persona_fizik.label(class="control-label") }}
+            </div>
+            <div class="col-xs-8">
+                {{ form.persona_fizik(class="form-control") }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form.adresa.label(class="control-label") }}
+            </div>
+            <div class="col-xs-8">
+                {{ form.adresa(class="form-control") }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form.telefoni.label(class="control-label") }}
+            </div>
+            <div class="col-xs-8">
+                {{ form.telefoni(class="form-control") }}
+            </div>
+        </div>
+    </form>
+    </div>
+ </div>
+
+</body>
+</html>
