@@ -36,7 +36,7 @@ class SimilarCompanies(View):
                         name2 = company2['_id']
 
                         if name2 != None:
-                            if self.similar_sevenshtein(name1, name2):
+                            if self.similar_levenshtein(name1, name2):
                                 #print 'Similarity detected: ' + str(name1) + ' - ' + str(name2)
                                 
                                 company2['_id'] = None;
@@ -54,5 +54,5 @@ class SimilarCompanies(View):
         # Return response.
         return resp
 
-    def similar_sevenshtein(self, string1, string2):
+    def similar_levenshtein(self, string1, string2):
         return (pylev.levenshtein(string1, string2) <= 5)
